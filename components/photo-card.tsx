@@ -65,11 +65,6 @@ export default function PhotoCard({ image, title, text, date }: PhotoCardProps) 
               <Calendar className="w-4 h-4" />
               <span className="font-medium">{date}</span>
             </div>
-
-            {/* Click hint */}
-            <div className="absolute top-4 left-4 bg-rose-500/20 backdrop-blur-sm rounded-full px-3 py-1">
-              <span className="text-rose-700 text-xs font-medium">Click to flip back</span>
-            </div>
           </div>
         </div>
       </div>

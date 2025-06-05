@@ -16,7 +16,7 @@ const photoData = {
   roaf: [
     {
       id: 1,
-      image: "/placeholder.svg?height=400&width=300",
+      image: "../assets/Nico_Photo.jpg?height=400&width=300",
       title: "Sweet Moments",
       text: "Every moment with you feels like a dream come true. Your smile lights up my entire world.",
       date: "Feb 14, 2024",
@@ -156,22 +156,6 @@ const photoData = {
 export default function ValentinesPhotoAlbum() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-red-50">
-      {/* Floating Hearts Animation */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        {[...Array(6)].map((_, i) => (
-          <Heart
-            key={i}
-            className={`absolute text-pink-200 animate-float opacity-20`}
-            style={{
-              left: `${Math.random() * 100}%`,
-              animationDelay: `${i * 2}s`,
-              animationDuration: `${8 + Math.random() * 4}s`,
-              fontSize: `${1 + Math.random()}rem`,
-            }}
-          />
-        ))}
-      </div>
-
       <Navigation sections={sections} />
 
       {/* Hero Section */}
@@ -201,13 +185,13 @@ export default function ValentinesPhotoAlbum() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-3 mb-4">
-                <span className="text-4xl animate-bounce-slow" style={{ animationDelay: `${index * 0.2}s` }}>
+                <span className="text-4xl">
                   {section.emoji}
                 </span>
                 <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
                   {section.title}
                 </h2>
-                <span className="text-4xl animate-bounce-slow" style={{ animationDelay: `${index * 0.2 + 0.1}s` }}>
+                <span className="text-4xl">
                   {section.emoji}
                 </span>
               </div>
