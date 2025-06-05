@@ -1,222 +1,260 @@
 "use client"
 import { Heart, Camera } from "lucide-react"
 import PhotoCard from "@/components/photo-card"
-import Navigation from "@/components/navigation"
+import { TypeAnimation } from "react-type-animation"
+
+interface Photo {
+  id: number
+  image: string
+  title: string
+  text: string
+  date: string
+  orientation: 'portrait' | 'landscape'
+}
 
 const sections = [
-  { id: "roaf", title: "roaf", emoji: "💕" },
-  { id: "moaf", title: "moaf", emoji: "🌸" },
-  { id: "groaf", title: "groaf", emoji: "✨" },
-  { id: "groaf-and-moaf", title: "groaf and moaf", emoji: "💖" },
-  { id: "emmoaf", title: "emmoaf", emoji: "🦋" },
-  { id: "roaf-and-emmoaf", title: "roaf and emmoaf", emoji: "🌹" },
+  { id: "west-coast", title: "West Coast", emoji: "🌊" },
+  { id: "desert-trails", title: "Desert Trails", emoji: "🌵" },
+  { id: "mountain-peaks", title: "Mountain Peaks", emoji: "⛰️" },
+  { id: "forest-paths", title: "Forest Paths", emoji: "🌲" },
+  { id: "city-lights", title: "City Lights", emoji: "🌆" },
+  { id: "hidden-gems", title: "Hidden Gems", emoji: "💎" },
 ]
 
-const photoData = {
-  roaf: [
+const photoData: Record<string, Photo[]> = {
+  "west-coast": [
     {
       id: 1,
-      image: "../assets/Nico_Photo.jpg?height=400&width=300",
-      title: "Sweet Moments",
-      text: "Every moment with you feels like a dream come true. Your smile lights up my entire world.",
-      date: "Feb 14, 2024",
+      image: "/photos/Nico_Photo.jpg",
+      title: "Pacific Coast Highway",
+      text: "The sun setting over the Pacific, painting the sky in hues of gold and purple. The road ahead curves along the coastline like a ribbon of possibilities.",
+      date: "Summer 2023",
+      orientation: 'landscape'
     },
     {
       id: 2,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Beautiful You",
-      text: "In this moment, I realized how lucky I am to have you in my life. You are absolutely radiant.",
-      date: "Jan 20, 2024",
+      title: "Big Sur Dreams",
+      text: "Misty cliffs and crashing waves create nature's symphony. Every turn reveals another breathtaking vista.",
+      date: "June 2023",
+      orientation: 'portrait'
     },
     {
       id: 3,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Pure Joy",
-      text: "Your laughter is my favorite sound in the world. This picture captures your beautiful spirit perfectly.",
-      date: "Dec 25, 2023",
+      title: "Coastal Towns",
+      text: "Quaint seaside villages where time seems to slow down. The smell of salt air and sound of seagulls create the perfect backdrop.",
+      date: "July 2023",
+      orientation: 'landscape'
     },
   ],
-  moaf: [
+  "desert-trails": [
     {
       id: 4,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Adventure Together",
-      text: "Every adventure is better with you by my side. We make the perfect team in everything we do.",
-      date: "Feb 10, 2024",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
     },
     {
       id: 5,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Cozy Moments",
-      text: "These quiet moments together are what I treasure most. Just you and me against the world.",
-      date: "Jan 15, 2024",
+      title: "Desert Night Sky",
+      text: "Under a blanket of stars, the desert comes alive. The Milky Way stretches across the sky like a river of light.",
+      date: "September 2023",
+      orientation: 'portrait'
     },
     {
       id: 6,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Sunset Dreams",
-      text: "Watching the sunset with you reminds me that every ending can be beautiful when shared with love.",
-      date: "Nov 30, 2023",
+      title: "Canyon Dreams",
+      text: "Layer upon layer of colored rock tell stories of ancient times. The silence here speaks volumes.",
+      date: "October 2023",
+      orientation: 'landscape'
     },
   ],
-  groaf: [
+  "mountain-peaks": [
     {
       id: 7,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Silly Us",
-      text: "I love how we can be completely ourselves together. Your silly side makes me fall for you even more.",
-      date: "Feb 5, 2024",
+      title: "Rocky Mountain High",
+      text: "Snow-capped peaks touch the clouds while mountain goats watch from their lofty perches. The air is thin but the views are worth it.",
+      date: "November 2023",
+      orientation: 'portrait'
     },
     {
       id: 8,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Dancing Hearts",
-      text: "Dancing with you feels like floating on clouds. Every step we take together is magical.",
-      date: "Jan 1, 2024",
+      title: "Alpine Lakes",
+      text: "Crystal clear waters mirror the surrounding peaks. The stillness here is profound and peaceful.",
+      date: "December 2023",
+      orientation: 'landscape'
     },
     {
       id: 9,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Morning Coffee",
-      text: "Starting my day with you makes everything better. Even coffee tastes sweeter when we share it.",
-      date: "Dec 15, 2023",
+      title: "Mountain Sunrise",
+      text: "First light paints the peaks in alpenglow. These moments make every early morning worth it.",
+      date: "January 2024",
+      orientation: 'portrait'
     },
   ],
-  "groaf-and-moaf": [
+  "forest-paths": [
     {
       id: 10,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Perfect Pair",
-      text: "We complement each other in the most beautiful way. Together, we create something magical.",
-      date: "Feb 12, 2024",
+      title: "Redwood Giants",
+      text: "Walking among ancient giants, feeling small yet connected to something greater. The forest holds wisdom in its silence.",
+      date: "February 2024",
+      orientation: 'portrait'
     },
     {
       id: 11,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Love Story",
-      text: "This is us writing our love story, one beautiful moment at a time. I can't wait for all our chapters ahead.",
-      date: "Jan 25, 2024",
+      title: "Mossy Trails",
+      text: "Every step cushioned by centuries of forest floor. The air is thick with the scent of earth and growth.",
+      date: "March 2024",
+      orientation: 'landscape'
     },
     {
       id: 12,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Forever Yours",
-      text: "In your eyes, I see my future. In your smile, I find my home. You are my always and forever.",
-      date: "Dec 31, 2023",
+      title: "Forest Light",
+      text: "Sunbeams pierce through the canopy creating natural spotlights on the forest floor. Magic exists in these moments.",
+      date: "April 2024",
+      orientation: 'portrait'
     },
   ],
-  emmoaf: [
+  "city-lights": [
     {
       id: 13,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Gentle Soul",
-      text: "Your kindness and gentle nature inspire me every day. You make the world a more beautiful place.",
-      date: "Feb 8, 2024",
+      title: "Urban Canyons",
+      text: "Skyscrapers create valleys of steel and glass. The city pulses with its own unique rhythm.",
+      date: "May 2024",
+      orientation: 'portrait'
     },
     {
       id: 14,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Dreamy Eyes",
-      text: "I could get lost in your eyes for hours. They tell the most beautiful stories without saying a word.",
-      date: "Jan 18, 2024",
+      title: "Night Markets",
+      text: "The streets come alive at night with the smell of street food and the buzz of conversation.",
+      date: "June 2024",
+      orientation: 'landscape'
     },
     {
       id: 15,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Peaceful Moments",
-      text: "With you, I've found my peace. These quiet moments together are my sanctuary.",
-      date: "Dec 20, 2023",
+      title: "City Sunsets",
+      text: "The sun sets behind the skyline, turning buildings into silhouettes against a painted sky.",
+      date: "July 2024",
+      orientation: 'portrait'
     },
   ],
-  "roaf-and-emmoaf": [
+  "hidden-gems": [
     {
       id: 16,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Complete",
-      text: "You complete me in ways I never knew I needed. Together, we are whole, we are home, we are love.",
-      date: "Feb 14, 2024",
+      title: "Secret Waterfalls",
+      text: "Off the beaten path, nature's hidden treasures await those willing to explore.",
+      date: "August 2024",
+      orientation: 'landscape'
     },
     {
       id: 17,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Infinite Love",
-      text: "My love for you grows stronger with each passing day. You are my infinity, my always, my everything.",
-      date: "Feb 1, 2024",
+      title: "Ghost Towns",
+      text: "Abandoned places tell stories of times gone by. Every creaking floorboard has a tale to tell.",
+      date: "September 2024",
+      orientation: 'portrait'
     },
     {
       id: 18,
       image: "/placeholder.svg?height=400&width=300",
-      title: "Our Future",
-      text: "Looking at this picture, I see our beautiful future together. Every dream I have includes you.",
-      date: "Jan 10, 2024",
+      title: "Local Secrets",
+      text: "The best stories come from the places not found in guidebooks.",
+      date: "October 2024",
+      orientation: 'landscape'
     },
   ],
 }
 
-export default function ValentinesPhotoAlbum() {
+export default function RoadTripJournal() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-red-50">
-      <Navigation sections={sections} />
-
+    <div className="min-h-screen paper-texture">
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-pink-400/20 via-rose-400/20 to-red-400/20 animate-gradient-shift"></div>
+        <div className="absolute inset-0 bg-[#8b4513]/10"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto">
-          <div className="mb-8 animate-bounce-slow">
-            <Camera className="w-16 h-16 mx-auto text-rose-500 mb-4" />
-          </div>
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 bg-clip-text text-transparent mb-6 animate-fade-in-up">
-            Our Love Story
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 animate-fade-in-up animation-delay-300">
-            A collection of our most precious moments together
-          </p>
-          <div className="flex items-center justify-center gap-2 text-rose-500 animate-fade-in-up animation-delay-600">
-            <Heart className="w-6 h-6 animate-pulse" />
-            <span className="text-lg font-medium">Made with love for you</span>
-            <Heart className="w-6 h-6 animate-pulse" />
+          <div className="mb-12">
+            <TypeAnimation
+              sequence={[
+                'hi emmy.\n',
+                1000,
+                'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n',
+                1000,
+                'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n',
+                1000,
+                'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n you are the one for me.\n',
+                1000,
+                'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n you are the one for me.\n happy birthday!\n',
+                1000,
+                'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n you are the one for me.\n happy birthday!\n we hope you like this <3',
+                1000,
+                'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n you are the one for me.\n happy birthday!\n we hope you like this <3 \n - roaf. groaf. moaf.',
+
+              ]}
+              wrapper="div"
+              speed={70}
+              className="text-2xl md:text-4xl font-bold text-[#8b4513] font-serif whitespace-pre-line text-left inline-block"
+            />
           </div>
         </div>
       </section>
 
       {/* Photo Sections */}
       {sections.map((section, index) => (
-        <section key={section.id} id={section.id} className="py-20 px-4 relative">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-3 mb-4">
-                <span className="text-4xl">
-                  {section.emoji}
-                </span>
-                <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 to-rose-600 bg-clip-text text-transparent">
-                  {section.title}
-                </h2>
-                <span className="text-4xl">
-                  {section.emoji}
-                </span>
-              </div>
-              <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-rose-400 mx-auto rounded-full"></div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {photoData[section.id as keyof typeof photoData]?.map((photo, photoIndex) => (
-                <div key={photo.id} className="animate-fade-in-up" style={{ animationDelay: `${photoIndex * 0.1}s` }}>
-                  <PhotoCard {...photo} />
+        <section key={section.id} id={section.id} className="relative">
+          <div className="absolute inset-0 bg-[#8b4513]/10"></div>
+          <div className="relative z-10 py-20 px-4">
+            <div className="max-w-7xl mx-auto">
+              <div className="text-center mb-16">
+                <div className="inline-flex items-center gap-3 mb-4">
+                  <span className="text-4xl">
+                    {section.emoji}
+                  </span>
+                  <h2 className="text-4xl md:text-6xl font-bold text-[#8b4513] font-serif">
+                    {section.title}
+                  </h2>
+                  <span className="text-4xl">
+                    {section.emoji}
+                  </span>
                 </div>
-              ))}
+                <div className="w-24 h-1 bg-[#8b4513] mx-auto rounded-full opacity-50"></div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {photoData[section.id]?.map((photo, photoIndex) => (
+                  <div key={photo.id} className="animate-fade-in-up" style={{ animationDelay: `${photoIndex * 0.1}s` }}>
+                    <PhotoCard {...photo} orientation={photo.orientation as 'portrait' | 'landscape'} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
       ))}
 
       {/* Footer */}
-      <footer className="py-12 text-center bg-gradient-to-r from-pink-100 to-rose-100">
-        <div className="flex items-center justify-center gap-2 text-rose-600 mb-4">
-          <Heart className="w-5 h-5 animate-pulse" />
-          <span className="font-medium">Forever and Always</span>
-          <Heart className="w-5 h-5 animate-pulse" />
+      <footer className="py-12 text-center vintage-border mt-8 relative">
+        <div className="absolute inset-0 bg-[#8b4513]/10"></div>
+        <div className="relative z-10">
+          <div className="flex items-center justify-center gap-2 text-[#8b4513] mb-4">
+            <span className="font-medium font-mono">The Journey Continues...</span>
+          </div>
+          <p className="text-[#5c2e0e] font-mono">Adventure awaits around every corner 🗺️</p>
         </div>
-        <p className="text-gray-600">Happy Valentine's Day, my love! 💕</p>
       </footer>
     </div>
   )
