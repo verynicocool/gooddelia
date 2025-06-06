@@ -47,7 +47,7 @@ export default function PhotoCard({ image, title, text, date, orientation = 'por
               src={image || "/placeholder.svg"} 
               alt={title} 
               fill 
-              className={`object-cover ${orientation === 'landscape' ? 'object-center' : 'object-top'}`}
+              className={`object-cover ${orientation === 'landscape' ? 'object-center' : 'object-center'}`}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
@@ -55,8 +55,6 @@ export default function PhotoCard({ image, title, text, date, orientation = 'por
               <div className="flex items-center justify-between text-white">
                 <h3 className="font-semibold text-lg">{title}</h3>
               </div>
-            </div>
-            <div className="absolute top-8 right-8 bg-white/20 backdrop-blur-sm rounded-full p-2">
             </div>
           </div>
         </div>

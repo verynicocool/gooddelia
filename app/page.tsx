@@ -13,171 +13,756 @@ interface Photo {
 }
 
 const sections = [
-  { id: "west-coast", title: "West Coast", emoji: "🌊" },
-  { id: "desert-trails", title: "Desert Trails", emoji: "🌵" },
-  { id: "mountain-peaks", title: "Mountain Peaks", emoji: "⛰️" },
-  { id: "forest-paths", title: "Forest Paths", emoji: "🌲" },
-  { id: "city-lights", title: "City Lights", emoji: "🌆" },
-  { id: "hidden-gems", title: "Hidden Gems", emoji: "💎" },
+  { id: "1", title: "the night we met" },
+  { id: "2", title: "our first few nights of fun 👠🎸💥" },
+  { id: "3", title: "big bear! 🌲🐻🏔️" },
+  { id: "4", title: "halloween! 🕸️💀🖤" },
+  { id: "5", title: "baby groaf. 🐱🐀💨" },
+  { id: "6", title: "sick new world! 🤘🎶🌎" },
+  { id: "7", title: "summer in san francisco 🌉💖🏙️" },
+  { id: "8", title: "baby moaf 🧡🖤🤍" },
+  { id: "9", title: "no values 💀🔥🤡" },
 ]
 
 const photoData: Record<string, Photo[]> = {
-  "west-coast": [
+  "1": [
     {
       id: 1,
-      image: "/photos/Nico_Photo.jpg",
+      image: "/photos/emmy_1.jpg",
       title: "Pacific Coast Highway",
       text: "The sun setting over the Pacific, painting the sky in hues of gold and purple. The road ahead curves along the coastline like a ribbon of possibilities.",
       date: "Summer 2023",
-      orientation: 'landscape'
+      orientation: 'portrait'
     },
+  ],
+  "2": [
     {
       id: 2,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Big Sur Dreams",
-      text: "Misty cliffs and crashing waves create nature's symphony. Every turn reveals another breathtaking vista.",
-      date: "June 2023",
+      image: "/photos/fun_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'portrait'
     },
     {
       id: 3,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Coastal Towns",
-      text: "Quaint seaside villages where time seems to slow down. The smell of salt air and sound of seagulls create the perfect backdrop.",
-      date: "July 2023",
-      orientation: 'landscape'
+      image: "/photos/fun2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
     },
-  ],
-  "desert-trails": [
     {
       id: 4,
-      image: "/placeholder.svg?height=400&width=300",
+      image: "/photos/fun3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 5,
+      image: "/photos/fun4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 6,
+      image: "/photos/fun5.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 7,
+      image: "/photos/fun6.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023", 
+      orientation: 'landscape'
+    },
+    {
+      id: 8,
+      image: "/photos/fun_end.jpg",
       title: "Monument Valley",
       text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
       date: "August 2023",
       orientation: 'landscape'
     },
     {
-      id: 5,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Desert Night Sky",
-      text: "Under a blanket of stars, the desert comes alive. The Milky Way stretches across the sky like a river of light.",
-      date: "September 2023",
-      orientation: 'portrait'
-    },
-    {
-      id: 6,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Canyon Dreams",
-      text: "Layer upon layer of colored rock tell stories of ancient times. The silence here speaks volumes.",
-      date: "October 2023",
-      orientation: 'landscape'
-    },
-  ],
-  "mountain-peaks": [
-    {
-      id: 7,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Rocky Mountain High",
-      text: "Snow-capped peaks touch the clouds while mountain goats watch from their lofty perches. The air is thin but the views are worth it.",
-      date: "November 2023",
-      orientation: 'portrait'
-    },
-    {
-      id: 8,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Alpine Lakes",
-      text: "Crystal clear waters mirror the surrounding peaks. The stillness here is profound and peaceful.",
-      date: "December 2023",
-      orientation: 'landscape'
-    },
-    {
       id: 9,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Mountain Sunrise",
-      text: "First light paints the peaks in alpenglow. These moments make every early morning worth it.",
-      date: "January 2024",
+      image: "/photos/fun8.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'portrait'
     },
-  ],
-  "forest-paths": [
     {
       id: 10,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Redwood Giants",
-      text: "Walking among ancient giants, feeling small yet connected to something greater. The forest holds wisdom in its silence.",
-      date: "February 2024",
+      image: "/photos/fun7.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'portrait'
     },
     {
       id: 11,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Mossy Trails",
-      text: "Every step cushioned by centuries of forest floor. The air is thick with the scent of earth and growth.",
-      date: "March 2024",
-      orientation: 'landscape'
-    },
-    {
-      id: 12,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Forest Light",
-      text: "Sunbeams pierce through the canopy creating natural spotlights on the forest floor. Magic exists in these moments.",
-      date: "April 2024",
+      image: "/photos/fun9.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'portrait'
     },
   ],
-  "city-lights": [
+  "3": [
+    {
+      id: 12,
+      image: "/photos/bear_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
     {
       id: 13,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Urban Canyons",
-      text: "Skyscrapers create valleys of steel and glass. The city pulses with its own unique rhythm.",
-      date: "May 2024",
+      image: "/photos/bear1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'portrait'
     },
     {
       id: 14,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Night Markets",
-      text: "The streets come alive at night with the smell of street food and the buzz of conversation.",
-      date: "June 2024",
-      orientation: 'landscape'
+      image: "/photos/bear2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
     },
     {
       id: 15,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "City Sunsets",
-      text: "The sun sets behind the skyline, turning buildings into silhouettes against a painted sky.",
-      date: "July 2024",
-      orientation: 'portrait'
+      image: "/photos/bear3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
     },
-  ],
-  "hidden-gems": [
     {
       id: 16,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Secret Waterfalls",
-      text: "Off the beaten path, nature's hidden treasures await those willing to explore.",
-      date: "August 2024",
-      orientation: 'landscape'
+      image: "/photos/bear4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
     },
     {
       id: 17,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Ghost Towns",
-      text: "Abandoned places tell stories of times gone by. Every creaking floorboard has a tale to tell.",
-      date: "September 2024",
+      image: "/photos/bear_end.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "4": [
+    {
+      id: 18,
+      image: "/photos/halloween1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'portrait'
     },
     {
-      id: 18,
-      image: "/placeholder.svg?height=400&width=300",
-      title: "Local Secrets",
-      text: "The best stories come from the places not found in guidebooks.",
-      date: "October 2024",
+      id: 19,
+      image: "/photos/halloween_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 20,
+      image: "/photos/halloween_end.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "5": [
+    {
+      id: 21,
+      image: "/photos/groaf_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 22,
+      image: "/photos/groaf1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 23,
+      image: "/photos/groaf2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 24,
+      image: "/photos/groaf3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 25,
+      image: "/photos/groaf4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 26,
+      image: "/photos/groaf5.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 27,
+      image: "/photos/groaf6.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 28,
+      image: "/photos/groaf7.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 29,
+      image: "/photos/groaf8.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 30,
+      image: "/photos/groaf9.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 31,
+      image: "/photos/groaf10.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 32,
+      image: "/photos/groaf11.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 33,
+      image: "/photos/groaf12.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",  
+      orientation: 'portrait'
+    },
+    {
+      id: 34,
+      image: "/photos/groaf13.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 35,
+      image: "/photos/groaf14.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 36,
+      image: "/photos/groaf15.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 37,
+      image: "/photos/groaf16.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 38,
+      image: "/photos/groaf17.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 39,
+      image: "/photos/groaf18.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 40,
+      image: "/photos/groaf19.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 41,
+      image: "/photos/groaf20.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 42,
+      image: "/photos/groaf21.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 43,
+      image: "/photos/groaf22.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 44,
+      image: "/photos/groaf23.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "6": [
+    {
+      id: 45,
+      image: "/photos/snw_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 46,
+      image: "/photos/snw1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 47,
+      image: "/photos/snw2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 48,
+      image: "/photos/snw3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 49,
+      image: "/photos/snw4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 50,
+      image: "/photos/snw5.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 51,
+      image: "/photos/snw6.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 52,
+      image: "/photos/snw7.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 53,
+      image: "/photos/snw_end.png",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'landscape'
     },
   ],
+  "7": [
+    {
+      id: 54,
+      image: "/photos/sf_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 55,
+      image: "/photos/sf1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 56,
+      image: "/photos/sf2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 57,
+      image: "/photos/sf3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 58,
+      image: "/photos/sf4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 59,
+      image: "/photos/sf5.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 60,
+      image: "/photos/sf6.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 61,
+      image: "/photos/sf7.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 62,
+      image: "/photos/sf8.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 63,
+      image: "/photos/sf9.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 64,
+      image: "/photos/sf10.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 65,
+      image: "/photos/sf11.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 66,
+      image: "/photos/sf12.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 67,
+      image: "/photos/sf13.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 68,
+      image: "/photos/sf14.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 69,
+      image: "/photos/sf15.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 70,
+      image: "/photos/sf_end.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "8": [
+    {
+      id: 71,
+      image: "/photos/moaf_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 72,
+      image: "/photos/moaf1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 73,
+      image: "/photos/moaf2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 74,
+      image: "/photos/moaf3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 75,
+      image: "/photos/moaf4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 76,
+      image: "/photos/moaf5.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 77,
+      image: "/photos/moaf6.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 78,
+      image: "/photos/moaf7.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 79,
+      image: "/photos/moaf8.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 80,
+      image: "/photos/moaf9.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 81,
+      image: "/photos/moaf10.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 82,
+      image: "/photos/moaf11.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 83,
+      image: "/photos/moaf12.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 84,
+      image: "/photos/moaf_end.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "9": [
+    {
+      id: 85,
+      image: "/photos/nv_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 86,
+      image: "/photos/nv1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 87,
+      image: "/photos/nv2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 88,
+      image: "/photos/nv3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 89,
+      image: "/photos/nv4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 90,
+      image: "/photos/nv_end.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+  ]
 }
 
 export default function RoadTripJournal() {
@@ -221,22 +806,19 @@ export default function RoadTripJournal() {
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-16">
                 <div className="inline-flex items-center gap-3 mb-4">
-                  <span className="text-4xl">
-                    {section.emoji}
-                  </span>
                   <h2 className="text-4xl md:text-6xl font-bold text-[#8b4513] font-serif">
                     {section.title}
                   </h2>
-                  <span className="text-4xl">
-                    {section.emoji}
-                  </span>
                 </div>
-                <div className="w-24 h-1 bg-[#8b4513] mx-auto rounded-full opacity-50"></div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {photoData[section.id]?.map((photo, photoIndex) => (
-                  <div key={photo.id} className="animate-fade-in-up" style={{ animationDelay: `${photoIndex * 0.1}s` }}>
+                {photoData[section.id]?.map((photo, photoIndex, array) => (
+                  <div 
+                    key={photo.id} 
+                    className={`animate-fade-in-up ${array.length === 1 ? 'md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3' : ''}`} 
+                    style={{ animationDelay: `${photoIndex * 0.1}s` }}
+                  >
                     <PhotoCard {...photo} orientation={photo.orientation as 'portrait' | 'landscape'} />
                   </div>
                 ))}
