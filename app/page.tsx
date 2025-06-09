@@ -22,6 +22,13 @@ const sections = [
   { id: "7", title: "summer in san francisco 🌉💖🏙️" },
   { id: "8", title: "baby moaf 🧡🖤🤍" },
   { id: "9", title: "no values 💀🔥🤡" },
+  { id: "10", title: "final semesters of fun 🎓🏞️🎢"},
+  { id: "11", title: "puerto rico! 🏝️🌊🍹"},
+  { id: "12", title: "the saddest day of my life" },
+  { id: "13", title: "much love. many pics. break time! 👾 " },
+  { id: "14", title: "the art you've made me 🎨💖🖼️" },
+  { id: "15", title: "beautiful loafs 🐱🐀🍞" },
+  { id: "16", title: "the love of my life." },
 ]
 
 const photoData: Record<string, Photo[]> = {
@@ -591,6 +598,14 @@ const photoData: Record<string, Photo[]> = {
       orientation: 'portrait'
     },
     {
+      id: 191,
+      image: "/photos/sf17.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
       id: 70,
       image: "/photos/sf_end.jpg",
       title: "Monument Valley",
@@ -720,7 +735,7 @@ const photoData: Record<string, Photo[]> = {
       title: "Monument Valley",
       text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
       date: "August 2023",
-      orientation: 'landscape'
+      orientation: 'portrait'
     },
     {
       id: 86,
@@ -736,7 +751,7 @@ const photoData: Record<string, Photo[]> = {
       title: "Monument Valley",
       text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
       date: "August 2023",
-      orientation: 'landscape'
+      orientation: 'portrait'
     },
     {
       id: 88,
@@ -744,7 +759,7 @@ const photoData: Record<string, Photo[]> = {
       title: "Monument Valley",
       text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
       date: "August 2023",
-      orientation: 'landscape'
+      orientation: 'portrait'
     },
     {
       id: 89,
@@ -752,7 +767,7 @@ const photoData: Record<string, Photo[]> = {
       title: "Monument Valley",
       text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
       date: "August 2023",
-      orientation: 'landscape'
+      orientation: 'portrait'
     },
     {
       id: 90,
@@ -760,10 +775,1295 @@ const photoData: Record<string, Photo[]> = {
       title: "Monument Valley",
       text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
       date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "10": [
+    {
+      id: 91,
+      image: "/photos/final_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 92,
+      image: "/photos/final1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 93,
+      image: "/photos/final2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 94,
+      image: "/photos/final3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 95,
+      image: "/photos/final4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 96,
+      image: "/photos/final5.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 97,
+      image: "/photos/final6.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 98,
+      image: "/photos/final7.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 99,
+      image: "/photos/final8.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
       orientation: 'landscape'
     },
+    {
+      id: 100,
+      image: "/photos/final9.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 101,
+      image: "/photos/final10.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 102,
+      image: "/photos/final11.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 103,
+      image: "/photos/final12.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 104,
+      image: "/photos/final13.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 105,
+      image: "/photos/final14.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 106,
+      image: "/photos/final15.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 107,
+      image: "/photos/final16.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 108,
+      image: "/photos/final17.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 109,
+      image: "/photos/final18.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 110,
+      image: "/photos/final19.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 111,
+      image: "/photos/final20.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 112,
+      image: "/photos/final21.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 113,
+      image: "/photos/final22.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 114,
+      image: "/photos/final23.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 116,
+      image: "/photos/final25.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 117,
+      image: "/photos/final26.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 118,
+      image: "/photos/final27.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 119,
+      image: "/photos/final28.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 120,
+      image: "/photos/final29.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 121,
+      image: "/photos/final30.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 122,
+      image: "/photos/final31.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 123,
+      image: "/photos/final32.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 124,
+      image: "/photos/final33.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "11": [
+    {
+      id: 125,
+      image: "/photos/pr_start.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 126,
+      image: "/photos/pr1.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 127,
+      image: "/photos/pr2.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 128,
+      image: "/photos/pr3.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 129,
+      image: "/photos/pr4.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 130,
+      image: "/photos/pr5.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 131,
+      image: "/photos/pr6.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 132,
+      image: "/photos/pr7.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 133,
+      image: "/photos/pr8.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 134,
+      image: "/photos/pr9.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 135,
+      image: "/photos/pr10.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 136,
+      image: "/photos/pr11.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 137,
+      image: "/photos/pr12.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 138,
+      image: "/photos/pr13.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 139,
+      image: "/photos/pr14.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 140,
+      image: "/photos/pr15.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 141,
+      image: "/photos/pr16.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 142,
+      image: "/photos/pr17.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 143,
+      image: "/photos/pr18.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 144,
+      image: "/photos/pr19.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 145,
+      image: "/photos/pr20.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 146,
+      image: "/photos/pr21.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 147,
+      image: "/photos/pr22.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 148,
+      image: "/photos/pr23.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 149,
+      image: "/photos/pr24.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 150,
+      image: "/photos/pr25.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 151,
+      image: "/photos/pr26.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },  
+    {
+      id: 152,
+      image: "/photos/pr27.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 153,
+      image: "/photos/pr28.jpg",
+      title: "Monument Valley",
+      text: "Ancient red rock formations pierce the sky like nature's skyscrapers. The desert holds secrets of millennia past.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+  ],
+  "12": [
+    {
+      id: 154,
+      image: "/photos/end.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+  ],
+  "14": [
+    {
+      id: 155,
+      image: "/photos/art_start.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 156,
+      image: "/photos/art1.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 157,
+      image: "/photos/art2.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 158,
+      image: "/photos/art3.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 159,
+      image: "/photos/art4.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 160,
+      image: "/photos/art5.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "15": [
+    {
+      id: 161,
+      image: "/photos/bc_start.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 162,
+      image: "/photos/bc1.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 163,
+      image: "/photos/bc2.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 164,
+      image: "/photos/bc3.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 165,
+      image: "/photos/bc4.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 166,
+      image: "/photos/bc5.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 167,
+      image: "/photos/bc6.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 168,
+      image: "/photos/bc7.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 169,
+      image: "/photos/bc8.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 170,
+      image: "/photos/bc9.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 171,
+      image: "/photos/bc10.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 172,
+      image: "/photos/bc11.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 173,
+      image: "/photos/bc12.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 174,
+      image: "/photos/bc13.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 175,
+      image: "/photos/bc14.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 176,
+      image: "/photos/bc15.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 177,
+      image: "/photos/bc16.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 178,
+      image: "/photos/bc17.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 179,
+      image: "/photos/bc18.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 180,
+      image: "/photos/bc19.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 181,
+      image: "/photos/bc20.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 182,
+      image: "/photos/bc21.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 183,
+      image: "/photos/bc22.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 184,
+      image: "/photos/bc23.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 185,
+      image: "/photos/bc24.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 186,
+      image: "/photos/bc25.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 187,
+      image: "/photos/bc26.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 188,
+      image: "/photos/bc27.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 189,
+      image: "/photos/bc28.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 190,
+      image: "/photos/bc29.jpg",
+      title: "Beautiful Loafs",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+  ],
+  "16": [
+    {
+      id: 192,
+      image: "/photos/e1.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 193,
+      image: "/photos/e2.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.", 
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 194,
+      image: "/photos/e3.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 195,
+      image: "/photos/e4.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 196,
+      image: "/photos/e5.jpg",
+      title: "The Saddest Day of My Life",    
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 197,                
+      image: "/photos/e6.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 198,
+      image: "/photos/e7.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 199,
+      image: "/photos/e8.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 200,
+      image: "/photos/e9.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },  
+    {
+      id: 201,
+      image: "/photos/e10.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 202,
+      image: "/photos/e11.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 203,
+      image: "/photos/e12.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 204,
+      image: "/photos/e13.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 205,
+      image: "/photos/e14.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 206,
+      image: "/photos/e15.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 207,
+      image: "/photos/e16.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 208,
+      image: "/photos/e17.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 209,
+      image: "/photos/e18.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 210,
+      image: "/photos/e19.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 211,
+      image: "/photos/e20.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 212,
+      image: "/photos/e21.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 213,
+      image: "/photos/e22.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 214,
+      image: "/photos/e23.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 215,
+      image: "/photos/e24.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 216,
+      image: "/photos/e25.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 217,
+      image: "/photos/e26.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 218,
+      image: "/photos/e27.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 219,
+      image: "/photos/e28.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 220,
+      image: "/photos/e29.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 221,
+      image: "/photos/e30.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 222,
+      image: "/photos/e31.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 223,
+      image: "/photos/e32.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'landscape'
+    },
+    {
+      id: 224,
+      image: "/photos/e33.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 225,
+      image: "/photos/e34.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 226,
+      image: "/photos/e35.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 227,
+      image: "/photos/e36.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 228,
+      image: "/photos/e37.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 229,
+      image: "/photos/e38.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 230,
+      image: "/photos/e39.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 231,
+      image: "/photos/e40.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 232,
+      image: "/photos/e41.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 233,
+      image: "/photos/e42.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 234,
+      image: "/photos/e43.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 235,
+      image: "/photos/e44.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 236,
+      image: "/photos/e45.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 237,
+      image: "/photos/e46.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 238,
+      image: "/photos/e47.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 239,
+      image: "/photos/e48.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 240,
+      image: "/photos/e49.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 241,
+      image: "/photos/e50.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 242,
+      image: "/photos/e51.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 243,
+      image: "/photos/e52.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 244,
+      image: "/photos/e53.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 245,
+      image: "/photos/e54.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 246,
+      image: "/photos/e55.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 247,
+      image: "/photos/e56.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 248,
+      image: "/photos/e57.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 249,
+      image: "/photos/e58.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 250,
+      image: "/photos/e59.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    },
+    {
+      id: 251,
+      image: "/photos/e60.jpg",
+      title: "The Saddest Day of My Life",
+      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      date: "August 2023",
+      orientation: 'portrait'
+    }
   ]
 }
+
 
 export default function RoadTripJournal() {
   return (
@@ -804,7 +2104,7 @@ export default function RoadTripJournal() {
           <div className="absolute inset-0 bg-[#8b4513]/10"></div>
           <div className="relative z-10 py-20 px-4">
             <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-16">
+              <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-3 mb-4">
                   <h2 className="text-4xl md:text-6xl font-bold text-[#8b4513] font-serif">
                     {section.title}
@@ -812,6 +2112,16 @@ export default function RoadTripJournal() {
                 </div>
               </div>
 
+              {}
+              {section.id === "13" ? (
+                <div className="flex justify-center items-center">
+                  <iframe 
+                    src="/trex-game.html" 
+                    className="w-[600px] h-[225px] border-4 border-[#8b4513] rounded-lg bg-white"
+                    title="T-Rex Game"
+                  />
+                </div>
+              ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {photoData[section.id]?.map((photo, photoIndex, array) => (
                   <div 
@@ -823,21 +2133,12 @@ export default function RoadTripJournal() {
                   </div>
                 ))}
               </div>
+            )}
             </div>
           </div>
         </section>
       ))}
-
-      {/* Footer */}
-      <footer className="py-12 text-center vintage-border mt-8 relative">
-        <div className="absolute inset-0 bg-[#8b4513]/10"></div>
-        <div className="relative z-10">
-          <div className="flex items-center justify-center gap-2 text-[#8b4513] mb-4">
-            <span className="font-medium font-mono">The Journey Continues...</span>
-          </div>
-          <p className="text-[#5c2e0e] font-mono">Adventure awaits around every corner 🗺️</p>
-        </div>
-      </footer>
+      
     </div>
   )
 }
