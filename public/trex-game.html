@@ -18,6 +18,9 @@
 <meta name="twitter:image:src" content="http://img.thecodepost.org/2015/01/trex.png">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 
+<img id="cat-sprite" src="sprites/Gryffin.png" style="display:none;">
+
+
 	<!--script type="text/javascript" src="a.js"></script-->
 	<script type="text/javascript">
 	function hideClass(name) {
@@ -298,7 +301,7 @@
     this.distanceMeter = new DistanceMeter(this.canvas,
     this.images.TEXT_SPRITE, this.dimensions.WIDTH);
     // Draw t-rex
-    this.tRex = new Trex(this.canvas, this.images.TREX);
+    this.tRex = new Trex(this.canvas, document.getElementById('cat-sprite'));
     this.outerContainerEl.appendChild(this.containerEl);
     if (IS_MOBILE) {
     this.createTouchController();
@@ -1256,7 +1259,7 @@
     if (this.status == Trex.status.WAITING) {
     this.blink(getTimeStamp());
     } else {
-    this.draw(this.currentAnimFrames[this.currentFrame], 0);
+    this.draw();
     }
     // Update the frame position.
     if (this.timer >= this.msPerFrame) {
@@ -1270,21 +1273,17 @@
     * @param {number} x
     * @param {number} y
     */
-    draw: function(x, y) {
-    var sourceX = x;
-    var sourceY = y;
-    var sourceWidth = this.config.WIDTH;
-    var sourceHeight = this.config.HEIGHT;
-    if (IS_HIDPI) {
-    sourceX *= 2;
-    sourceY *= 2;
-    sourceWidth *= 2;
-    sourceHeight *= 2;
-    }
-    this.canvasCtx.drawImage(this.image, sourceX, sourceY,
-    sourceWidth, sourceHeight,
-    this.xPos, this.yPos,
-    this.config.WIDTH, this.config.HEIGHT);
+    draw: function() {
+      const img = this.image;
+      const ctx = this.canvasCtx;
+      const width = 44;
+      const height = 47;
+
+      ctx.drawImage(
+        img,
+        0, 0, img.width, img.height, // Source
+        this.xPos, this.yPos, width, height // Destination
+      );
     },
     /**
     * Sets a random time for the blink to happen.
@@ -2197,7 +2196,7 @@ input[type=checkbox] {
     margin-top: 30px;
   }
 
-  .small-link {
+.small-link {
     font-size: 1em;
   }
 }

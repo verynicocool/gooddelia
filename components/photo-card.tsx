@@ -53,7 +53,11 @@ export default function PhotoCard({ image, title, text, date, orientation = 'por
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             <div className="absolute bottom-8 left-8 right-8">
               <div className="flex items-center justify-between text-white">
-                <h3 className="font-semibold text-lg">{title}</h3>
+                {date != "groaf" ? (
+                  <h3 className="font-semibold text-lg">{title}</h3>
+                ) : (
+                  <h3></h3>
+                )}
               </div>
             </div>
           </div>
@@ -63,19 +67,16 @@ export default function PhotoCard({ image, title, text, date, orientation = 'por
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
           <div className="w-full h-full bg-[#e4d5b7] p-6 flex flex-col justify-between" style={maskStyles}>
             <div className="relative z-10">
-              <div className="flex items-center gap-2 mb-4 border-b border-[#8b4513]/20 pb-3 pl-6">
-                <MapPin className="w-5 h-5 text-[#8b4513]" />
-                <h3 className="text-xl font-bold text-[#8b4513] font-serif">{title}</h3>
-              </div>
-
+              {date != "groaf" ? (
+                <div className="flex items-center gap-2 mb-4 border-b border-[#8b4513]/20 pb-3 pl-6">
+                  <h3 className="text-xl font-bold text-[#8b4513] font-serif">{title}</h3>
+                </div>
+              ) : (
+                <div></div>
+              )}
               <div className="flex-1 mb-6 pl-6">
                 <p className="text-[#5c2e0e] leading-relaxed text-sm font-mono italic">{text}</p>
               </div>
-            </div>
-
-            <div className="flex items-center justify-end gap-2 text-sm text-[#8b4513] relative z-10 border-t border-[#8b4513]/20 pt-3">
-              <Calendar className="w-4 h-4" />
-              <span className="font-mono">{date}</span>
             </div>
           </div>
         </div>
