@@ -237,29 +237,15 @@ const VinylPrint = styled.div<{ $coverImage: string }>`
   transform: scaleX(-1);
 `
 
-const PlayButton = styled.button`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scaleX(-1);
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.7);
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  color: white;
-  font-size: 20px;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.9);
-  }
-
-  &::before {
-    content: "▶";
-    margin-left: 3px;
-  }
+const InteractionOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  cursor: default;
+  background: transparent;
 `
 
 const shuffleArray = <T extends unknown>(array: T[]): T[] => {
@@ -275,11 +261,19 @@ const VinylPlayer = () => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0)
   const [playlist, setPlaylist] = useState<Song[]>([])
   const [isPlaying, setIsPlaying] = useState(false)
+  const [hasInteracted, setHasInteracted] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
     setPlaylist(shuffleArray(SONGS))
   }, [])
+
+  const handleFirstInteraction = () => {
+    if (!hasInteracted) {
+      setIsPlaying(true)
+      setHasInteracted(true)
+    }
+  }
 
   useEffect(() => {
     if (playlist.length === 0) return
@@ -305,10 +299,6 @@ const VinylPlayer = () => {
       audio.remove()
     }
   }, [currentSongIndex, playlist, isPlaying])
-
-  const handlePlay = () => {
-    setIsPlaying(true)
-  }
 
   const handlePlayPause = () => {
     if (audioRef.current) {
@@ -338,38 +328,42 @@ const VinylPlayer = () => {
   const currentSong = playlist[currentSongIndex]
 
   return (
-    <VinylContainer>
-      <Controls className="controls">
-        <ControlButton onClick={handlePrevious} title="Previous">
-          <svg viewBox="0 0 24 24">
-            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
-          </svg>
-        </ControlButton>
-        <ControlButton onClick={handlePlayPause} title={isPlaying ? "Pause" : "Play"}>
-          {isPlaying ? (
+    <>
+      {!hasInteracted && (
+        <InteractionOverlay onClick={handleFirstInteraction} />
+      )}
+      <VinylContainer>
+        <Controls className="controls">
+          <ControlButton onClick={handlePrevious} title="Previous">
             <svg viewBox="0 0 24 24">
-              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
             </svg>
-          ) : (
+          </ControlButton>
+          <ControlButton onClick={handlePlayPause} title={isPlaying ? "Pause" : "Play"}>
+            {isPlaying ? (
+              <svg viewBox="0 0 24 24">
+                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+              </svg>
+            ) : (
+              <svg viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            )}
+          </ControlButton>
+          <ControlButton onClick={handleNext} title="Next">
             <svg viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z"/>
+              <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
             </svg>
-          )}
-        </ControlButton>
-        <ControlButton onClick={handleNext} title="Next">
-          <svg viewBox="0 0 24 24">
-            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
-          </svg>
-        </ControlButton>
-      </Controls>
-      <Album>
-        <Cover $coverImage={currentSong.cover} />
-        {!isPlaying && <PlayButton onClick={handlePlay} />}
-        <Vinyl className="vinyl">
-          <VinylPrint $coverImage={currentSong.cover} />
-        </Vinyl>
-      </Album>
-    </VinylContainer>
+          </ControlButton>
+        </Controls>
+        <Album>
+          <Cover $coverImage={currentSong.cover} />
+          <Vinyl className="vinyl">
+            <VinylPrint $coverImage={currentSong.cover} />
+          </Vinyl>
+        </Album>
+      </VinylContainer>
+    </>
   )
 }
 

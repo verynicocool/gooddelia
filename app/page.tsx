@@ -1698,8 +1698,8 @@ const photoData: Record<string, Photo[]> = {
     {
       id: 207,
       image: "/photos/e16.jpg",
-      title: "TODO: KISSING PICTURE",
-      text: "The saddest day of my life was when I realized I was never going to see you again.",
+      title: "life imitates art",
+      text: "with respect to the painting, i already spoke so much about this picture. but one of the most beautiful nights of my life with you emmy. i wish i could say more but this is the only caption written post-breakup and it hurts way too much to think about all this right now. so unfortunately, i have to leave it here. but neverthless, i'll never forget this day.",
       date: "August 2023",
       orientation: 'portrait'
     },
