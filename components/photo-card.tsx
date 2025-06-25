@@ -65,17 +65,17 @@ export default function PhotoCard({ image, title, text, date, orientation = 'por
 
         {/* Back of card */}
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
-          <div className="w-full h-full bg-[#e4d5b7] p-6 flex flex-col justify-between" style={maskStyles}>
+          <div className="w-full h-full bg-[#e8d5b9] p-6 flex flex-col justify-between" style={maskStyles}>
             <div className="relative z-10">
               {date != "groaf" ? (
-                <div className="flex items-center gap-2 mb-4 border-b border-[#8b4513]/20 pb-3 pl-6">
+                <div className="flex items-center gap-2 mb-4 border-b border-[#8b4513]/30 pb-3 pl-6">
                   <h3 className="text-xl font-bold text-[#8b4513] font-serif">{title}</h3>
                 </div>
               ) : (
                 <div></div>
               )}
               <div className="flex-1 mb-6 pl-6">
-                <p className="text-[#5c2e0e] leading-relaxed text-sm font-mono italic">{text}</p>
+                <p className="text-[#5c4030] leading-relaxed text-sm font-mono italic">{text}</p>
               </div>
             </div>
           </div>

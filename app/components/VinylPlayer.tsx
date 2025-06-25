@@ -100,6 +100,48 @@ const SONGS: Song[] = [
     artist: "Elis Regina & Tom Jobim",
     file: "/songs/Aguas de Março - Elis Regina & Tom Jobim.mp3",
     cover: "/covers/Aguas de Março - Elis Regina & Tom Jobim.jpg"
+  },
+  {
+    title: "Break",
+    artist: "Alex G",
+    file: "/songs/Break - Alex G.mp3",
+    cover: "/covers/Break - Alex G.jpg"
+  },
+  {
+    title: "Dig Up Her Bones",
+    artist: "Misfits",
+    file: "/songs/Dig Up Her Bones - Misfits.mp3",
+    cover: "/covers/Dig Up Her Bones - Misfits.jpg"
+  },
+  {
+    title: "Good Good Things",
+    artist: "Descendents",
+    file: "/songs/Good Good Things - Descendents.mp3",
+    cover: "/covers/Good Good Things - Descendents.jpg"
+  },
+  {
+    title: "I Love You",
+    artist: "Fontaines D.C.",
+    file: "/songs/I Love You - Fontaines D.C..mp3",
+    cover: "/covers/I Love You - Fontaines D.C..jpg"
+  },
+  {
+    title: "Las Flores",
+    artist: "Cafe Tacvba",
+    file: "/songs/Las Flores - Cafe Tacvba.mp3",
+    cover: "/covers/Las Flores - Cafe Tacvba.jpg"
+  },
+  {
+    title: "Shot Down",
+    artist: "Scowl",
+    file: "/songs/Shot Down - Scowl.mp3",
+    cover: "/covers/Shot Down - Scowl.jpg"
+  },
+  {
+    title: "Dancing with Myself",
+    artist: "Generation X",
+    file: "/songs/Dancing with Myself - Generation X.mp3",
+    cover: "/covers/Dancing with Myself - Generation X.jpg"
   }
 ]
 
@@ -201,7 +243,7 @@ const Vinyl = styled.div`
   border-radius: 50%;
   animation: 5s linear spinThat infinite;
   transform: scaleX(-1);
-  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
   transition: left 0.3s ease-out;
   left: 0;
 
@@ -237,17 +279,6 @@ const VinylPrint = styled.div<{ $coverImage: string }>`
   transform: scaleX(-1);
 `
 
-const InteractionOverlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  cursor: default;
-  background: transparent;
-`
-
 const shuffleArray = <T extends unknown>(array: T[]): T[] => {
   const shuffled = [...array]
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -261,19 +292,11 @@ const VinylPlayer = () => {
   const [currentSongIndex, setCurrentSongIndex] = useState(0)
   const [playlist, setPlaylist] = useState<Song[]>([])
   const [isPlaying, setIsPlaying] = useState(false)
-  const [hasInteracted, setHasInteracted] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
   useEffect(() => {
     setPlaylist(shuffleArray(SONGS))
   }, [])
-
-  const handleFirstInteraction = () => {
-    if (!hasInteracted) {
-      setIsPlaying(true)
-      setHasInteracted(true)
-    }
-  }
 
   useEffect(() => {
     if (playlist.length === 0) return
@@ -328,42 +351,37 @@ const VinylPlayer = () => {
   const currentSong = playlist[currentSongIndex]
 
   return (
-    <>
-      {!hasInteracted && (
-        <InteractionOverlay onClick={handleFirstInteraction} />
-      )}
-      <VinylContainer>
-        <Controls className="controls">
-          <ControlButton onClick={handlePrevious} title="Previous">
+    <VinylContainer>
+      <Controls className="controls">
+        <ControlButton onClick={handlePrevious} title="Previous">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+          </svg>
+        </ControlButton>
+        <ControlButton onClick={handlePlayPause} title={isPlaying ? "Pause" : "Play"}>
+          {isPlaying ? (
             <svg viewBox="0 0 24 24">
-              <path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/>
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
             </svg>
-          </ControlButton>
-          <ControlButton onClick={handlePlayPause} title={isPlaying ? "Pause" : "Play"}>
-            {isPlaying ? (
-              <svg viewBox="0 0 24 24">
-                <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-              </svg>
-            ) : (
-              <svg viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            )}
-          </ControlButton>
-          <ControlButton onClick={handleNext} title="Next">
+          ) : (
             <svg viewBox="0 0 24 24">
-              <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+              <path d="M8 5v14l11-7z"/>
             </svg>
-          </ControlButton>
-        </Controls>
-        <Album>
-          <Cover $coverImage={currentSong.cover} />
-          <Vinyl className="vinyl">
-            <VinylPrint $coverImage={currentSong.cover} />
-          </Vinyl>
-        </Album>
-      </VinylContainer>
-    </>
+          )}
+        </ControlButton>
+        <ControlButton onClick={handleNext} title="Next">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+          </svg>
+        </ControlButton>
+      </Controls>
+      <Album>
+        <Cover $coverImage={currentSong.cover} />
+        <Vinyl className="vinyl">
+          <VinylPrint $coverImage={currentSong.cover} />
+        </Vinyl>
+      </Album>
+    </VinylContainer>
   )
 }
 

@@ -2055,17 +2055,27 @@ const photoData: Record<string, Photo[]> = {
       date: "August 2023",
       orientation: 'portrait'
     }
+  ],
+  "17": [
+    {
+      id: 252,
+      image: "/photos/Final_Happy.png",
+      title: "forever and always",
+      text: "you are my everything emmelia. i love you more than words can express. thank you for being the most amazing partner i could ever ask for. here's to our beautiful future together.",
+      date: "Forever",
+      orientation: 'landscape'
+    }
   ]
 }
 
 
 export default function RoadTripJournal() {
   return (
-    <div className="relative">
-      <div className="min-h-screen bg-black">
+    <div className="min-h-screen bg-[#e8d5b9] text-[#5c4030]">
+      <div className="relative">
         {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
-          <div className="absolute inset-0 bg-[#8b4513]/10"></div>
+          <div className="absolute inset-0 bg-[#f5e6d3]/30"></div>
           <div className="relative z-10 text-center max-w-4xl mx-auto">
             <div className="mb-12">
               <TypeAnimation
@@ -2083,6 +2093,9 @@ export default function RoadTripJournal() {
                   'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n you are the one for me.\n happy birthday!\n we hope you like this <3',
                   1000,
                   'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n you are the one for me.\n happy birthday!\n we hope you like this <3 \n - roaf. groaf. moaf.',
+                  1000,
+                  'hi emmy.\n i thot it would be fun if we looked back at all the places we\'ve been and all the fun we\'ve had.\n i love you so much emmelia.\n you are the one for me.\n happy birthday!\n we hope you like this <3 \n - roaf. groaf. moaf. \n \n p.s. click on the vinyl to play some of the songs that remind me the most of our time together',
+
 
                 ]}
                 wrapper="div"
@@ -2096,43 +2109,54 @@ export default function RoadTripJournal() {
         {/* Photo Sections */}
         {sections.map((section, index) => (
           <section key={section.id} id={section.id} className="relative">
-            <div className="absolute inset-0 bg-[#8b4513]/10"></div>
-            <div className="relative z-10 py-20 px-4">
-              <div className="max-w-7xl mx-auto">
-                <div className="text-center mb-10">
-                  <div className="inline-flex items-center gap-3 mb-4">
-                    <h2 className="text-4xl md:text-6xl font-bold text-[#8b4513] font-serif">
-                      {section.title}
-                    </h2>
-                  </div>
-                </div>
-
-                {}
-                {section.id === "13" ? (
-                  <div className="flex justify-center items-center">
-                    <iframe 
-                      src="/trex-game.html" 
-                      className="w-[600px] h-[225px] border-4 border-[#8b4513] rounded-lg bg-white"
-                      title="T-Rex Game"
-                    />
-                  </div>
-                ) : (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {photoData[section.id]?.map((photo, photoIndex, array) => (
-                    <div 
-                      key={photo.id} 
-                      className={`animate-fade-in-up ${array.length === 1 ? 'md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3' : ''}`} 
-                      style={{ animationDelay: `${photoIndex * 0.1}s` }}
-                    >
-                      <PhotoCard {...photo} orientation={photo.orientation as 'portrait' | 'landscape'} />
+            <div className="relative">
+              <div className="absolute inset-0 bg-[#f5e6d3]/30"></div>
+              <div className="relative z-10 py-20 px-4">
+                <div className="max-w-7xl mx-auto">
+                  <h2 className="text-4xl md:text-6xl font-bold mb-8 text-[#8b4513] text-center font-serif">
+                    {section.title}
+                  </h2>
+                  {}
+                  {section.id === "13" ? (
+                    <div className="flex justify-center items-center">
+                      <iframe 
+                        src="/trex-game.html" 
+                        className="w-[600px] h-[225px] border-4 border-[#8b4513] rounded-lg bg-white"
+                        title="T-Rex Game"
+                      />
                     </div>
-                  ))}
+                  ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {photoData[section.id]?.map((photo, photoIndex, array) => (
+                      <div 
+                        key={photo.id} 
+                        className={`animate-fade-in-up ${array.length === 1 ? 'md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3' : ''}`} 
+                        style={{ animationDelay: `${photoIndex * 0.1}s` }}
+                      >
+                        <PhotoCard {...photo} orientation={photo.orientation as 'portrait' | 'landscape'} />
+                      </div>
+                    ))}
+                  </div>
+                )}
                 </div>
-              )}
               </div>
             </div>
           </section>
         ))}
+
+        {/* Final Image */}
+        <div className="relative py-20 px-4">
+          <div className="absolute inset-0 bg-[#f5e6d3]/30"></div>
+          <div className="relative z-10 max-w-7xl mx-auto">
+            <div className="flex justify-center">
+              <img 
+                src="/photos/Final_Happy.png" 
+                alt="Forever and Always"
+                className="w-full max-w-4xl"
+              />
+            </div>
+          </div>
+        </div>
         
       </div>
       <VinylPlayer />
